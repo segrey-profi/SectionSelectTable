@@ -39,6 +39,30 @@ class SectionSelectTableViewController: UITableViewController {
         tableView.reloadData()
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        if isMovingFromParentViewController {
+            print("\(self) IS MOVING FROM PARENT")
+        }
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        
+        if isMovingFromParentViewController {
+            print("\(self) HAS MOVED FROM PARENT")
+        }
+    }
+    
+    override func didMove(toParentViewController parent: UIViewController?) {
+        super.didMove(toParentViewController: parent)
+        
+        if parent == nil {
+            print("NOW \(self) HAS REALLY MOVED FROM PARENT")
+        }
+    }
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return model.count
     }
@@ -56,6 +80,7 @@ class SectionSelectTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        performSegue(withIdentifier: "showFoo", sender: nil)
     }
     
 }
@@ -82,7 +107,8 @@ extension UITableView {
     
     func dequeueReusableCell<C: UITableViewCell>(for indexPath: IndexPath) -> C {
         let cellId = String(describing: C.self)
-        return dequeueReusableCell(withIdentifier: cellId) as! C
+        let cell: UITableViewCell = dequeueReusableCell(withIdentifier: cellId, for: indexPath)
+        return cell as! C
     }
     
 }

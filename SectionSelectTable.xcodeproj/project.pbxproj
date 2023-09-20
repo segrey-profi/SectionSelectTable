@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		720E645F2914028B000753AE /* RotatableViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720E645E2914028B000753AE /* RotatableViews.swift */; };
 		7221248A2094C71F00BE3593 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 722124892094C71F00BE3593 /* AppDelegate.swift */; };
 		7221248C2094C71F00BE3593 /* SectionSelectTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7221248B2094C71F00BE3593 /* SectionSelectTableViewController.swift */; };
 		7221248F2094C71F00BE3593 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7221248D2094C71F00BE3593 /* Main.storyboard */; };
 		722124912094C72200BE3593 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 722124902094C72200BE3593 /* Assets.xcassets */; };
 		722124942094C72200BE3593 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 722124922094C72200BE3593 /* LaunchScreen.storyboard */; };
 		7221249C2094CBD400BE3593 /* HighlightableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7221249B2094CBD400BE3593 /* HighlightableTableViewCell.swift */; };
+		7253CF05221DC70C0009326D /* FooViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7253CF04221DC70C0009326D /* FooViewController.swift */; };
+		72B01B102906BA3500561DB0 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B01B0F2906BA3500561DB0 /* AnimationViewController.swift */; };
+		72EDAC37212723EE00BB7245 /* BarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EDAC36212723EE00BB7245 /* BarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		720E645E2914028B000753AE /* RotatableViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatableViews.swift; sourceTree = "<group>"; };
 		722124862094C71F00BE3593 /* SectionSelectTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SectionSelectTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		722124892094C71F00BE3593 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7221248B2094C71F00BE3593 /* SectionSelectTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionSelectTableViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +29,9 @@
 		722124932094C72200BE3593 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		722124952094C72200BE3593 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7221249B2094CBD400BE3593 /* HighlightableTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightableTableViewCell.swift; sourceTree = "<group>"; };
+		7253CF04221DC70C0009326D /* FooViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooViewController.swift; sourceTree = "<group>"; };
+		72B01B0F2906BA3500561DB0 /* AnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
+		72EDAC36212723EE00BB7245 /* BarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +67,10 @@
 				722124892094C71F00BE3593 /* AppDelegate.swift */,
 				7221248B2094C71F00BE3593 /* SectionSelectTableViewController.swift */,
 				7221249B2094CBD400BE3593 /* HighlightableTableViewCell.swift */,
+				7253CF04221DC70C0009326D /* FooViewController.swift */,
+				72EDAC36212723EE00BB7245 /* BarViewController.swift */,
+				72B01B0F2906BA3500561DB0 /* AnimationViewController.swift */,
+				720E645E2914028B000753AE /* RotatableViews.swift */,
 				7221248D2094C71F00BE3593 /* Main.storyboard */,
 				722124902094C72200BE3593 /* Assets.xcassets */,
 				722124922094C72200BE3593 /* LaunchScreen.storyboard */,
@@ -138,9 +150,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				720E645F2914028B000753AE /* RotatableViews.swift in Sources */,
+				72B01B102906BA3500561DB0 /* AnimationViewController.swift in Sources */,
 				7221248C2094C71F00BE3593 /* SectionSelectTableViewController.swift in Sources */,
 				7221248A2094C71F00BE3593 /* AppDelegate.swift in Sources */,
+				7253CF05221DC70C0009326D /* FooViewController.swift in Sources */,
 				7221249C2094CBD400BE3593 /* HighlightableTableViewCell.swift in Sources */,
+				72EDAC37212723EE00BB7245 /* BarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +300,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/SectionSelectTable/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -294,6 +311,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ru.profi.test.SectionSelectTable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -304,7 +322,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/SectionSelectTable/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;

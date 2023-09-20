@@ -38,7 +38,7 @@ class HighlightableTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        
+        if (selected) { print("I WAS SELECTED: \(self)") }
         setupBackground(highlighted: isSelected)
     }
     
